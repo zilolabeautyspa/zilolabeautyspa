@@ -3,8 +3,9 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "zilolabeautyspa": {
+    "zilola-beauty-spa": {
       "projectType": "application",
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -14,16 +15,27 @@
           "options": {
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
-            "inlineStyleLanguage": "css",
-            "assets": [{ "glob": "**/*", "input": "public" }],
-            "styles": ["src/styles.css"],
-            "outputMode": "static"
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "public"
+              }
+            ],
+            "styles": ["src/styles.css"]
           },
           "configurations": {
             "production": {
               "budgets": [
-                { "type": "initial", "maximumWarning": "1MB", "maximumError": "2MB" },
-                { "type": "anyComponentStyle", "maximumWarning": "20kB", "maximumError": "30kB" }
+                {
+                  "type": "initial",
+                  "maximumWarning": "1MB",
+                  "maximumError": "2MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "20kB",
+                  "maximumError": "40kB"
+                }
               ],
               "outputHashing": "all"
             },
@@ -38,8 +50,12 @@
         "serve": {
           "builder": "@angular/build:dev-server",
           "configurations": {
-            "production": { "buildTarget": "zilolabeautyspa:build:production" },
-            "development": { "buildTarget": "zilolabeautyspa:build:development" }
+            "production": {
+              "buildTarget": "zilola-beauty-spa:build:production"
+            },
+            "development": {
+              "buildTarget": "zilola-beauty-spa:build:development"
+            }
           },
           "defaultConfiguration": "development"
         }

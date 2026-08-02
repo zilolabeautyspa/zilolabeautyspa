@@ -1,0 +1,21 @@
+<header class="site-header">
+  <div class="header-inner shell">
+    <a class="logo" routerLink="/" aria-label="Zilola Beauty Spa home" (click)="closeMenu()">
+      <span class="logo-mark">Z</span>
+      <span class="logo-copy"><strong>ZILOLA</strong><small>BEAUTY SPA</small></span>
+    </a>
+
+    <button class="menu-button" type="button" aria-label="Toggle navigation" (click)="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav [class.open]="menuOpen()" aria-label="Main navigation">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenu()">Home</a>
+      <a routerLink="/services" routerLinkActive="active" (click)="closeMenu()">Services</a>
+      <a routerLink="/bridal" routerLinkActive="active" (click)="closeMenu()">Bridal</a>
+      <a routerLink="/about" routerLinkActive="active" (click)="closeMenu()">About</a>
+    </nav>
+
+    <button class="button button-primary header-book" type="button" (click)="booking.open()">Book Now</button>
+  </div>
+</header>

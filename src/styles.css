@@ -1,41 +1,16 @@
-* {
-  box-sizing: border-box;
-  font-size: 16px;
+:root{
+  --cream:#fffaf6;
+  --peach:#fbe8df;
+  --peach-2:#f6d8ca;
+  --coral:#d96f55;
+  --coral-dark:#bd5c46;
+  --brown:#805d50;
+  --text:#171412;
+  --gold:#b88b2a;
+  --line:#ecd2c5;
+  --line-strong:#e8bfae;
+  --display:'Italiana', Georgia, serif;
+  --sans:'DM Sans','Montserrat',Arial,sans-serif;
 }
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  background: #f5e5dc;
-  color: #274d5d;
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-}
-
-button,
-input,
-select,
-textarea {
-  font: inherit;
-}
-button,
-a {
-  cursor: pointer;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-img {
-  display: block;
-  width: 100%;
-}
-::selection {
-  background: #2a5568;
-  color: #fff;
-}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--text);font-family:var(--sans);font-size:16px;line-height:1.5}button,input,select,textarea{font:inherit}button,a{cursor:pointer}a{text-decoration:none;color:inherit}img{display:block;width:100%;max-width:100%}.shell{width:min(1500px,calc(100% - 64px));margin-inline:auto}.section{padding:100px 0}.section-heading h2{font-family:var(--display);font-size:clamp(56px,6vw,84px);font-weight:400;line-height:1.05;margin:0}.section-heading p{max-width:760px;margin:22px auto 0;color:var(--brown);font-size:18px;line-height:1.7}.centered{text-align:center}.pill{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:999px;background:#f7ded5;color:var(--coral);font-size:14px;font-weight:500}.light-pill{background:rgba(255,255,255,.2);color:#fff}.button{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:52px;padding:14px 30px;border:1px solid transparent;border-radius:999px;font-size:16px;font-weight:500;transition:transform .2s,background .2s,border-color .2s}.button:hover{transform:translateY(-2px)}.button-primary{background:var(--coral);color:white}.button-primary:hover{background:var(--coral-dark)}.button-outline{border-color:var(--coral);color:var(--coral);background:rgba(255,255,255,.25)}.button-light{background:white;color:var(--coral)}
+@media(max-width:700px){.shell{width:min(100% - 40px,1500px)}.section{padding:76px 0}}
