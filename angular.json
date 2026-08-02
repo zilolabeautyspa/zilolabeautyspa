@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "zilola-beauty-spa": {
+    "zilolabeautyspa": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -51,10 +51,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "zilola-beauty-spa:build:production"
+              "buildTarget": "zilolabeautyspa:build:production"
             },
             "development": {
-              "buildTarget": "zilola-beauty-spa:build:development"
+              "buildTarget": "zilolabeautyspa:build:development"
             }
           },
           "defaultConfiguration": "development"
