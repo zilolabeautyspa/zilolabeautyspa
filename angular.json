@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "lumera-spa": {
+    "zilolabeautyspa": {
       "projectType": "application",
       "root": "",
       "sourceRoot": "src",
@@ -38,8 +38,8 @@
         "serve": {
           "builder": "@angular/build:dev-server",
           "configurations": {
-            "production": { "buildTarget": "lumera-spa:build:production" },
-            "development": { "buildTarget": "lumera-spa:build:development" }
+            "production": { "buildTarget": "zilolabeautyspa:build:production" },
+            "development": { "buildTarget": "zilolabeautyspa:build:development" }
           },
           "defaultConfiguration": "development"
         }

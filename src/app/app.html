@@ -1,7 +1,7 @@
 <header class="site-header" [class.scrolled]="true">
-  <a class="brand" href="#home" aria-label="Luméra home" (click)="closeMenu()">
+  <a class="brand" href="#home" aria-label="ZilolaBeautySpa home" (click)="closeMenu()">
     <span class="brand-mark">L</span>
-    <span>LUMÉRA</span>
+    <span>ZilolaBeautySpa</span>
   </a>
 
   <button class="menu-button" type="button" aria-label="Toggle navigation" [attr.aria-expanded]="menuOpen()" (click)="toggleMenu()">
@@ -37,7 +37,7 @@
     <div class="section-heading centered">
       <span class="mini-mark">✦</span>
       <p class="eyebrow">The art of intentional rest</p>
-      <h2>Welcome to the <em>Luméra wellness haven</em></h2>
+      <h2>Welcome to the <em>ZilolaBeautySpa wellness haven</em></h2>
       <p class="lede">Step into a world where modern wellness meets timeless ritual. Every detail—from aromatic botanicals to expert touch—is designed to help you feel beautifully restored.</p>
     </div>
 
@@ -122,12 +122,12 @@
 
 <footer id="contact">
   <div class="footer-main">
-    <div><a class="brand footer-brand" href="#home"><span class="brand-mark">L</span><span>LUMÉRA</span></a><p>A private sanctuary for modern wellness and timeless restoration.</p></div>
+    <div><a class="brand footer-brand" href="#home"><span class="brand-mark">L</span><span>ZilolaBeautySpa</span></a><p>A private sanctuary for modern wellness and timeless restoration.</p></div>
     <div><h4>Visit</h4><p>128 Willow House Lane<br>Alexandria, VA 22314</p><p>Mon–Sat 9am–8pm<br>Sun 10am–6pm</p></div>
-    <div><h4>Contact</h4><p><a href="tel:+17035550144">(703) 555-0144</a><br><a href="mailto:hello@lumeraspa.com">hello@lumeraspa.com</a></p></div>
+    <div><h4>Contact</h4><p><a href="tel:+17035550144">(703) 555-0144</a><br><a href="mailto:hello@zilolabeautyspaspa.com">hello@zilolabeautyspaspa.com</a></p></div>
     <div><h4>Follow</h4><p><a href="#">Instagram</a><br><a href="#">Pinterest</a><br><a href="#">Facebook</a></p></div>
   </div>
-  <div class="footer-bottom"><span>© {{ currentYear }} Luméra Spa</span><span>Privacy · Terms · Accessibility</span></div>
+  <div class="footer-bottom"><span>© {{ currentYear }} ZilolaBeautySpa Spa</span><span>Privacy · Terms · Accessibility</span></div>
 </footer>
 
 @if (bookingOpen()) {
@@ -141,13 +141,13 @@
         <form #bookingForm="ngForm" (ngSubmit)="submitBooking(bookingForm)">
           <label>Full name<input name="name" ngModel required autocomplete="name"><small>Please enter your name.</small></label>
           <label>Email<input type="email" name="email" ngModel required email autocomplete="email"><small>Please enter a valid email.</small></label>
-          <label>Preferred treatment<select name="treatment" ngModel required><option value="" disabled>Select a treatment</option><option>Hydrotherapy</option><option>Deep Tissue Massage</option><option>Reflexology</option><option>Luméra Signature Ritual</option><option>Bespoke Spa Day</option></select><small>Please select a treatment.</small></label>
+          <label>Preferred treatment<select name="treatment" ngModel required><option value="" disabled>Select a treatment</option><option>Hydrotherapy</option><option>Deep Tissue Massage</option><option>Reflexology</option><option>ZilolaBeautySpa Signature Ritual</option><option>Bespoke Spa Day</option></select><small>Please select a treatment.</small></label>
           <div class="form-row"><label>Preferred date<input type="date" name="date" ngModel required></label><label>Preferred time<select name="time" ngModel required><option value="" disabled>Select time</option><option>Morning</option><option>Afternoon</option><option>Evening</option></select></label></div>
           <label>Notes<textarea name="notes" ngModel rows="3" placeholder="Anything you would like us to know?"></textarea></label>
           <button class="button button-dark full" type="submit">Send request</button>
         </form>
       } @else {
-        <div class="success-state"><span>✓</span><h2>Request received</h2><p>Thank you. A Luméra concierge will be in touch shortly to confirm your appointment.</p><button class="button button-dark" type="button" (click)="closeBooking()">Close</button></div>
+        <div class="success-state"><span>✓</span><h2>Request received</h2><p>Thank you. A ZilolaBeautySpa concierge will be in touch shortly to confirm your appointment.</p><button class="button button-dark" type="button" (click)="closeBooking()">Close</button></div>
       }
     </section>
   </div>
