@@ -1,0 +1,103 @@
+# ==========================
+# Angular / Node.js
+# ==========================
+node_modules/
+dist/
+.angular/
+.cache/
+coverage/
+tmp/
+temp/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Build outputs
+out-tsc/
+build/
+
+# Package manager
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ==========================
+# Visual Studio
+# ==========================
+.vs/
+bin/
+obj/
+TestResults/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ==========================
+# VS Code
+# ==========================
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# JetBrains
+.idea/
+
+# ==========================
+# OS Files
+# ==========================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ==========================
+# Angular cache
+# ==========================
+.angular/cache/
+
+# ==========================
+# Temporary files
+# ==========================
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# ==========================
+# Generated files
+# ==========================
+*.tsbuildinfo
+
+# ==========================
+# Firebase (if used)
+# ==========================
+.firebase/
+
+# ==========================
+# Netlify
+# ==========================
+.netlify/
+
+# ==========================
+# Vercel
+# ==========================
+.vercel/
+
+# ==========================
+# npm cache
+# ==========================
+.npm/
